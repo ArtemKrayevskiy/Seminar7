@@ -18,4 +18,8 @@ public class FlowerBucket extends Item{
         }
         return  price;
     }
+    public FlowerBucket( FlowerPack flowerPack){
+        this.quantity += flowerPack.getQuantity();
+        this.flowerPacks.add(flowerPack);
+    }
 }
