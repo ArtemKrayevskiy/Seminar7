@@ -2,7 +2,7 @@ package com.example.flowerstore.flowers;
 
 public  class ItemDecorator extends Item{
 
-    private Item item;
+    private final Item item;
     public ItemDecorator(Item item){
         this.item = item;
     }

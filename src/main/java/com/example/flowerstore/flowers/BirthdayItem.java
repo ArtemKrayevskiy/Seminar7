@@ -1,7 +1,6 @@
 package com.example.flowerstore.flowers;
 
 public class BirthdayItem extends ItemDecorator{
-    private Item item;
 
     public BirthdayItem(Item item){
         super(item);
@@ -9,7 +8,7 @@ public class BirthdayItem extends ItemDecorator{
 
     @Override
     public double getPrice() {
-        return item.getPrice() - (item.getPrice()/10);
+        return super.getPrice() - (super.getPrice()/10);
     }
 
     public String toString(){
