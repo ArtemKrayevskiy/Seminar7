@@ -4,7 +4,7 @@ public class BirthdayItem extends ItemDecorator{
     private Item item;
 
     public BirthdayItem(Item item){
-        this.item = item;
+        super(item);
     }
 
     @Override

@@ -1,7 +1,18 @@
 package com.example.flowerstore.flowers;
 
-public abstract class ItemDecorator extends Item{
-    @Override
-    public abstract double getPrice();
+public  class ItemDecorator extends Item{
 
+    private Item item;
+    public ItemDecorator(Item item){
+        this.item = item;
+    }
+
+    public String getDescription(){
+        return item.toString();
+    }
+
+    @Override
+    public double getPrice() {
+        return item.getPrice();
+    }
 }
